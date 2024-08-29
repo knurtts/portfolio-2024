@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
-
 <template>
-  <header>Header here!</header>
+  <div class="">
+    <header class="">Header here!</header>
 
-  <RouterView />
+    <RouterView />
+  </div>
 </template>
+
+<script setup lang="ts"></script>
