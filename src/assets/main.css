@@ -554,20 +554,12 @@ video {
   --tw-contain-style:  ;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.bg-slate-950 {
+.bg-main-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+  background-color: rgb(12 12 12 / var(--tw-bg-opacity));
 }
 
-body {
-  color: white;
-  background-color: #0c0c0c;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
