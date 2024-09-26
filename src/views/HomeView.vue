@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="flex h-screen w-screen justify-center">
+    <div id="home" class="flex h-screen w-screen justify-center">
       <div class="content-center mr-6">
         <div class="text-center my-20 font-extrabold text-4xl">Robert Anderson</div>
         <div>
@@ -8,12 +8,12 @@
         </div>
       </div>
       <div class="content-center ml-6">
-        <div class="text-3xl">Who do I am are you do you think?</div>
-        <div class="text-3xl">What does it have I done?</div>
-        <div class="text-3xl">Do this want contact?</div>
-        <div class="text-3xl">Does Bruno Mars is gay?</div>
+        <div class="text-2xl my-8">Who Am I?</div>
+        <div class="text-2xl my-8">What have I done?</div>
+        <div class="text-2xl my-8">Contact Me</div>
       </div>
     </div>
+    <div id="mywork" class="flex h-screen w-screen justify-center"></div>
   </main>
 </template>
 
