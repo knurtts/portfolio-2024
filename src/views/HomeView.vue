@@ -1,9 +1,9 @@
 <template>
   <main>
-    <HomeSection />
-    <AboutMe />
-    <MyWork />
-    <ContactMe />
+    <HomeSection id="home" />
+    <AboutMe id="whoami" />
+    <MyWork id="mywork" />
+    <ContactMe id="contact" />
   </main>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div id="whoami" class="flex h-screen w-screen justify-center"></div>
+  <div class="flex h-screen w-screen justify-center"></div>
 </template>
 
 <script>

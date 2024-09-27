@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="h-screen w-screen flex-col content-center">
+  <div class="h-screen w-screen flex-col content-center">
     <div class="text-center my-5 text-4xl">Robert Anderson</div>
     <div class="flex justify-center">
       <div class="content-center mr-6">

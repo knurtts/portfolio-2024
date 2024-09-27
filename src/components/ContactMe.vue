@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="flex h-screen w-screen justify-center">
+  <div class="flex h-screen w-screen justify-center">
     <div class="content-center mr-6">
       <img class="w-96 rounded-full" src="@/assets/images/beard-phone.jpg" />
     </div>
