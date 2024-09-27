@@ -1,5 +1,10 @@
 # portfolio-2024
 
+### Run project locally
+
+- `npm i`
+- `npm run dev`
+
 ### Home page
 
     - Menu selection
