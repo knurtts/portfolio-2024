@@ -4,9 +4,11 @@
       <img class="w-96 rounded-full" src="@/assets/images/beard-phone.jpg" />
     </div>
     <div class="content-center ml-6">
-      <div class="text-2xl my-8">
-        <MaterialIcon class="mr-1" iconName="mail" /> robert.anderson322@outlook.com
-      </div>
+      <a href="mailto:robert.anderson322@outlook.com">
+        <div class="text-2xl my-8">
+          <MaterialIcon class="mr-1" iconName="mail" /> robert.anderson322@outlook.com
+        </div>
+      </a>
 
       <a href="www.linkedin.com/in/robert-anderson-94364511" target="_blank">
         <div class="text-2xl my-8 flex">
