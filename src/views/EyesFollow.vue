@@ -1,30 +1,34 @@
 <template>
-  <div class="h-screen w-screen move-area">
+  <div class="move-area">
     <div class="container">
-      <div class="eye" />
-      <div class="eye" />
-      <img class="w-96" src="@/assets/images/beard-eyes.jpeg" />
+      <div ref="eye" :style="eyeCss" class="eye" />
+      <div ref="eye" :style="eyeCss" class="eye" />
+      <img class="w-96" @mousemove="mouseMove" src="@/assets/images/beard-eyes.jpeg" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: EyesFollow,
+  name: 'EyesFollow',
+  data() {
+    return {
+      eyeCss: {}
+    }
+  },
   methods: {
     mouseMove() {
-      var eye = $('.eye')
-      console.log('eye', eye)
-      var x = eye.offset().left + eye.width() / 2
-      var y = eye.offset().top + eye.height() / 2
+      var eye = this.$refs.eye
+      var x = eye.getBoundingClientRect().left + 30 / 2
+      var y = eye.getBoundingClientRect().top + 30 / 2
       var rad = Math.atan2(event.pageX - x, event.pageY - y)
       var rot = rad * (180 / Math.PI) * -1 + 180
-      eye.css({
+      this.eyeCss = {
         '-webkit-transform': 'rotate(' + rot + 'deg)',
         '-moz-transform': 'rotate(' + rot + 'deg)',
         '-ms-transform': 'rotate(' + rot + 'deg)',
         transform: 'rotate(' + rot + 'deg)'
-      })
+      }
     }
   }
 }
@@ -35,7 +39,7 @@ export default {
   /*normally use body*/
   width: 100vw;
   height: 100vh;
-  padding: 10% 45%;
+  padding: 10% 15%;
 }
 .container {
   width: 100%;
