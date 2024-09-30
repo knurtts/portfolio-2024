@@ -631,6 +631,10 @@ video {
   margin-right: 1.5rem;
 }
 
+.inline-block {
+  display: inline-block;
+}
+
 .flex {
   display: flex;
 }
@@ -641,6 +645,10 @@ video {
 
 .h-7 {
   height: 1.75rem;
+}
+
+.h-8 {
+  height: 2rem;
 }
 
 .h-screen {
@@ -655,12 +663,20 @@ video {
   width: 66.666667%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-96 {
   width: 24rem;
 }
 
 .w-screen {
   width: 100vw;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-\[1280px\] {
@@ -696,6 +712,11 @@ video {
   background-color: rgb(12 12 12 / var(--tw-bg-opacity));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+}
+
 .text-center {
   text-align: center;
 }
@@ -717,4 +738,40 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.after\:absolute::after {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.after\:bottom-4::after {
+  content: var(--tw-content);
+  bottom: 1rem;
+}
+
+.after\:right-2::after {
+  content: var(--tw-content);
+  right: 0.5rem;
+}
+
+.after\:h-3::after {
+  content: var(--tw-content);
+  height: 0.75rem;
+}
+
+.after\:w-3::after {
+  content: var(--tw-content);
+  width: 0.75rem;
+}
+
+.after\:rounded-full::after {
+  content: var(--tw-content);
+  border-radius: 9999px;
+}
+
+.after\:bg-black::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }

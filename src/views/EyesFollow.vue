@@ -1,10 +1,16 @@
 <template>
-  <div class="move-area">
-    <div class="container">
-      <div ref="eye" :style="eyeCss" class="eye" />
-      <div ref="eye" :style="eyeCss" class="eye" />
-      <img class="w-96" @mousemove="mouseMove" src="@/assets/images/beard-eyes.jpeg" />
-    </div>
+  <div class="w-screen h-screen" @mousemove="mouseMove">
+    <div
+      ref="eye"
+      :style="eyeCss"
+      class="relative inline-block rounded-full h-8 w-8 bg-slate-200 after:absolute after:bottom-4 after:right-2 after:w-3 after:h-3 after:bg-black after:rounded-full"
+    />
+    <div
+      ref="eye"
+      :style="eyeCss"
+      class="relative inline-block rounded-full h-8 w-8 bg-slate-200 after:absolute after:bottom-4 after:right-2 after:w-3 after:h-3 after:bg-black after:rounded-full"
+    />
+    <img class="w-96" src="@/assets/images/beard-eyes.jpeg" />
   </div>
 </template>
 
@@ -19,8 +25,8 @@ export default {
   methods: {
     mouseMove() {
       var eye = this.$refs.eye
-      var x = eye.getBoundingClientRect().left + 30 / 2
-      var y = eye.getBoundingClientRect().top + 30 / 2
+      var x = eye.getBoundingClientRect().left + 32 / 2
+      var y = eye.getBoundingClientRect().top + 32 / 2
       var rad = Math.atan2(event.pageX - x, event.pageY - y)
       var rot = rad * (180 / Math.PI) * -1 + 180
       this.eyeCss = {
@@ -33,34 +39,3 @@ export default {
   }
 }
 </script>
-
-<style>
-.move-area {
-  /*normally use body*/
-  width: 100vw;
-  height: 100vh;
-  padding: 10% 15%;
-}
-.container {
-  width: 100%;
-}
-.eye {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  background: #ccc;
-}
-.eye:after {
-  /*pupil*/
-  position: absolute;
-  bottom: 17px;
-  right: 10px;
-  width: 10px;
-  height: 10px;
-  background: #000;
-  border-radius: 50%;
-  content: ' ';
-}
-</style>
