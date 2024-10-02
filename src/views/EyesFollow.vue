@@ -23,7 +23,7 @@ export default {
     }
   },
   methods: {
-    mouseMove() {
+    mouseMove(event) {
       var eye = this.$refs.eye
       var x = eye.getBoundingClientRect().left + 32 / 2
       var y = eye.getBoundingClientRect().top + 32 / 2
