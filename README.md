@@ -1,5 +1,7 @@
 # portfolio-2024
 
+In progress portfolio project, implemented with Vue and TailwindCSS
+
 ### Run project locally
 
 - `npm i`
